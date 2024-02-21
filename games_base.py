@@ -233,4 +233,10 @@ class DotsAndBoxes(State, Heuristic):
             state.player *= -1
         return state
 
+    def reward(self) -> int:
+        return self.points
+
+    def terminal(self) -> bool:
+        return len(self.actions()) == 0
+
 

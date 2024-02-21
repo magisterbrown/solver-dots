@@ -5,7 +5,7 @@ game = DotsAndBoxes(1,3)
 print(game)
 
 acts = game.actions()
-while len(acts)>0:
+while not game.terminal():
     
     a = random.choice(acts)
     print("--------------------------------")
@@ -14,5 +14,12 @@ while len(acts)>0:
     print(a)
     print(game.points)
     print(game)
-    s = input("dd")
+    #s = input("dd")
     acts = game.actions()
+
+
+# MiniMax ----------------------------
+def minimax(state, direct): 
+    return 0
+
+
