@@ -1,7 +1,8 @@
 from games_base import DotsAndBoxes
 import random
+import time
 
-game = DotsAndBoxes(1,3)
+game = DotsAndBoxes(5,5)
 print(game)
 
 acts = game.actions()
@@ -15,7 +16,9 @@ while not game.terminal():
     print(game.points)
     print(game)
     #s = input("dd")
+    time.sleep(0.5)
     acts = game.actions()
+
 
 
 # MiniMax ----------------------------
